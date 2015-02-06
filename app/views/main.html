@@ -1,0 +1,21 @@
+<h1>MovieMeter</h1>
+<br>
+<br>
+<div class="container">
+	<div class="main"> 
+	    <div class="header col-md-12">
+	        <div class="col-md-4">Movie Name : <input type="text" class="Movie_name" ng-model="queryMovie"> </div>
+	        <div class="col-md-3">
+	        	<span>Start Year :</span>
+	        	<input type="text" ng-model="selectedStartDate" bs-datepicker data-min-view='2' data-autoclose="1" data-date-format='yyyy' />
+	        </div>
+	        <div class="col-md-3">
+	        	<span>End Year :</span>
+	        	<input type="text" ng-model="selectedEndDate" bs-datepicker data-min-view='2' data-autoclose="1" data-date-format="yyyy" />
+	        </div>
+	        <button class="btn btn-primary col-md-1" ng-click="find_movies()">Search</button>
+	    </div>
+	    <div class="content m-t30" ui-view="basic_list">
+	    </div>
+	</div>
+</div>

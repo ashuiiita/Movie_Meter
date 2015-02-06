@@ -1,0 +1,39 @@
+<div class="loading" ng-show="flag">
+		<img src="images/loading.gif" />
+</div>
+<div class="movie_info" ng-hide="hideMovieDetails">
+	<h1>Movie Details : </h1>
+	
+	<div class="scroll2 m-t5">
+		<ul class="list-style">
+			<li>
+				<img src = "{{movie_data.posters.original}}" width="50px" height="50px">
+			</li>
+			<br>
+			<li>
+				<b>Title :</b> {{movie_data.title}}
+			</li>
+			<li>
+				<b>Year :</b> {{movie_data.year}} 
+			</li>
+			<li>
+				<b> Synopsis :</b> {{movie_data.synopsis}} 
+			</li>
+			<li>
+				<b>Cast:</b>
+				<ul ng-repeat="characters in movie_data.abridged_cast">
+					<li> {{characters.name}} </li>
+				</ul>
+			</li>
+		</ul>
+		<b>Critics:</b>
+		<br>
+		<ul ng-repeat="review in movie_review.reviews" style="list-style-type:none;padding:0px;">
+			<li> 
+				<u>{{review.critic}}</u> : {{review.quote}} 
+			</li>
+		</ul>
+	</div>
+</div>
+
+

@@ -1,0 +1,39 @@
+input[type="text"]{
+  width:60%;
+  border-radius: 3px;
+  border-style: solid;
+} 
+.scroll {
+  overflow: scroll;
+}
+
+.scroll2{
+  overflow: scroll;
+}
+
+h1{
+  margin:0px;
+}
+
+.header{
+  margin-left: 5px;
+}
+
+.m-t30{
+  margin-top: 30px;
+}
+.m-t5{
+  margin-top: 5px;
+}
+.p-0{
+  padding: 0px;
+}
+.m-t70{
+  margin-top:70px;
+}
+.m-t60{
+  margin-top:60px;
+}
+.m-b5{
+  margin-bottom:5px;
+}

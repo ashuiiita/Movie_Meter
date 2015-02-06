@@ -1,0 +1,22 @@
+<div class="m-t30">
+	<div class="col-md-4 scroll m-t70">
+		<ul ng-repeat = "movie in data.movies|filter:in_range track by $index" style="list-style-type:none">
+			<div class="col-md-12 m-b5">
+				<li>
+					<div class="col-md-2">
+						<img src="{{movie.posters.thumbnail}}" height="50px" width="50px">
+					</div>
+					<div class="col-md-10">
+						<a ui-sref="default.list.item({id:movie.id})">{{movie.title}}</a>
+					</div>
+				</li>
+			</div>
+		</ul>
+	</div>
+	<div class="m-t5">
+		<div class="col-md-2">
+		</div>
+		<div class="col-md-4 panel m-t60" ui-view="list_item_view">
+		</div>
+	</div>
+</div>
